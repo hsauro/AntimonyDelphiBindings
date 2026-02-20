@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E188A401-FAB1-4AA3-8C51-30D30E619C9C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AntimonyExample.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AntimonyExample">
+        <MSBuild Projects="AntimonyExample.dproj"/>
+    </Target>
+    <Target Name="AntimonyExample:Clean">
+        <MSBuild Projects="AntimonyExample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AntimonyExample:Make">
+        <MSBuild Projects="AntimonyExample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AntimonyExample"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AntimonyExample:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AntimonyExample:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
