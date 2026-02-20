@@ -13,6 +13,6 @@ https://github.com/sys-bio/antimony
 
 Go to releases and download antimony-windows-latest-release.zip
 
-Copy libantimony.lib in the same folder as the executable as well as teh microsoft (140) runtime libraries 
+Copy libantimony.lib in the same folder as the executable as well as the microsoft (140) runtime libraries 
 
 
