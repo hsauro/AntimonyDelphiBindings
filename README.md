@@ -1,6 +1,8 @@
 # Antimony Delphi Bindings
 This project includes Delphi bindings to libAntimony (SBML), a wrapper class, and an example of how to use the wrapper.
 
+This code was developed using a combination of Human effort and AI assistance.
+
 AntimonyAPI.pas is the bindings file itself
 
 AntimonyWrapper.pas is the wrapper file
